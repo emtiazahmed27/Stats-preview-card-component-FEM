@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+.spacing-td {
+  margin: 1rem 0;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233deg, 47%, 7%);
+}
+body .container {
+  width: 70%;
+  min-height: 70vh;
+  background-color: hsl(244deg, 38%, 16%);
+  margin: auto;
+  margin-top: 7.5%;
+  border-radius: 1rem;
+  display: flex;
+}
+body .container .left-container {
+  width: 100%;
+}
+body .container .left-container .wrapper {
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 8rem;
+}
+body .container .left-container .wrapper h1 {
+  margin-top: 2rem 0;
+  font-weight: 700;
+  font-family: "Inter";
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 1px;
+}
+body .container .left-container .wrapper h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+body .container .left-container .wrapper p {
+  font-weight: 400;
+  font-family: "Lexend Deca";
+  color: hsla(0deg, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+}
+body .container .left-container .wrapper .left-cont-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+body .container .left-container .wrapper .left-cont-footer h2 {
+  font-weight: 700;
+  font-family: "Inter";
+  color: hsl(0deg, 0%, 100%);
+}
+body .container .left-container .wrapper .left-cont-footer p {
+  font-weight: 400;
+  font-family: "Lexend Deca";
+  color: hsla(0deg, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+}
+body .container .right-container {
+  width: 100%;
+  position: relative;
+}
+body .container .right-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 1rem 1rem 0;
+}
+body .container .right-container::after {
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277deg, 64%, 61%);
+  opacity: 0.6;
+  border-radius: 0 1rem 1rem 0;
+}
+
+@media screen and (max-width: 376px) {
+  body main .container {
+    width: 90%;
+    margin-top: 5%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body main .container .left-container {
+    text-align: center;
+  }
+  body main .container .left-container .wrapper {
+    margin-top: 1.5rem;
+  }
+  body main .container .left-container .wrapper h1 {
+    font-size: 24px;
+  }
+  body main .container .left-container .wrapper p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  body main .container .left-container .wrapper .left-cont-footer {
+    margin: 1.5rem 0;
+    flex-direction: column;
+  }
+  body main .container .left-container .wrapper .left-cont-footer .footer-2 {
+    padding: 1rem 0;
+  }
+  body main .container .left-container .wrapper .left-cont-footer h2 {
+    font-size: 20px;
+  }
+  body main .container .right-container img {
+    border-radius: 1rem 1rem 0 0;
+  }
+  body main .container .right-container::after {
+    border-radius: 1rem 1rem 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */
